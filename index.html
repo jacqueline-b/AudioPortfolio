@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Jacqueline Babcock — Technical Audio Designer. Unity, Wwise, C#."
+      content="Jacqueline Babcock — Technical Audio Designer. Unity, UE5, Wwise, C#, C++."
     />
     <title>Jacqueline Babcock — Technical Audio Designer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/styles.css" />
@@ -19,214 +19,117 @@
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
 
-    <header class="site-header">
-      <a class="logo" href="#top">JB</a>
-      <nav class="site-nav" aria-label="Primary">
-        <ul>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#music">Music</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-
     <main id="main">
-      <section id="top" class="hero" aria-labelledby="hero-name">
-        <div class="hero__plane" aria-hidden="true">
-          <div class="hero__wave"></div>
-        </div>
-        <div class="hero__content">
-          <h1 id="hero-name" class="hero__name">Jacqueline Babcock</h1>
-          <p class="hero__role">Technical Audio Designer</p>
-          <p class="hero__stack">Unity · Wwise · C#</p>
-          <div class="hero__actions">
-            <a class="btn btn--primary" href="assets/resume.pdf" target="_blank" rel="noopener">Resume</a>
-            <a class="btn btn--ghost" href="https://github.com/jacqueline-b" target="_blank" rel="noopener">GitHub</a>
-            <a class="btn btn--ghost" href="mailto:Jacquelinebabc@gmail.com">Email</a>
-          </div>
-        </div>
+      <section id="top" class="hero">
+        <h1>Jacqueline Babcock</h1>
+        <p class="hero__role">Technical Audio Designer</p>
+        <p class="hero__stack">Unity · UE5 · Wwise · C# · C++</p>
+        <p class="hero__links">
+          <a href="assets/resume.pdf" target="_blank" rel="noopener">Resume</a>
+          <a href="https://github.com/jacqueline-b" target="_blank" rel="noopener">GitHub</a>
+          <a href="mailto:Jacquelinebabc@gmail.com">Email</a>
+        </p>
       </section>
 
-      <section id="projects" class="section" aria-labelledby="projects-heading">
-        <header class="section__header">
-          <h2 id="projects-heading">Featured Projects</h2>
-          <p>Interactive systems, game audio, and tools built in Unity and on the web.</p>
-        </header>
+      <section id="about" class="section">
+        <h2>About</h2>
+        <p>
+          Technical Audio Designer with experience developing interactive audio systems
+          in Unity, UE5 and Wwise. Background in collaborative game development using
+          C#, C++, Git, and Agile Scrum methodologies, with a passion for building responsive,
+          interactive audio experiences.
+        </p>
+        <p class="about-education">
+          New York University, BFA Film &amp; Television — August 2026
+        </p>
+      </section>
 
-        <ul class="project-grid">
+      <section id="projects" class="section">
+        <h2>Projects</h2>
+        <ul class="project-list">
           <li>
-            <a class="project-card" href="projects/group5-fps.html">
-              <div class="project-card__thumb" style="--thumb: #1a3a3a" aria-hidden="true"></div>
-              <div class="project-card__body">
-                <h3>Group5 FPS</h3>
-                <p>Team-built Unity first-person shooter with C# gameplay systems.</p>
-                <ul class="tech-tags">
-                  <li>Unity</li>
-                  <li>C#</li>
-                  <li>Git</li>
-                </ul>
-              </div>
+            <a href="projects/group5-fps.html">
+              <span class="project-list__title">Group5 FPS</span>
+              <span class="project-list__desc">Unity FPS — C# gameplay systems</span>
+              <span class="project-list__tech">Unity · C# · Git</span>
             </a>
           </li>
           <li>
-            <a class="project-card" href="projects/mazeweb.html">
-              <div class="project-card__thumb" style="--thumb: #2a2f45" aria-hidden="true"></div>
-              <div class="project-card__body">
-                <h3>MazeWeb</h3>
-                <p>Unity WebGL maze game wrapped in a custom browser shell with integrated audio.</p>
-                <ul class="tech-tags">
-                  <li>Unity</li>
-                  <li>JavaScript</li>
-                  <li>WebGL</li>
-                </ul>
-              </div>
+            <a href="projects/mazeweb.html">
+              <span class="project-list__title">MazeWeb</span>
+              <span class="project-list__desc">Unity WebGL maze in a custom browser shell</span>
+              <span class="project-list__tech">Unity · JavaScript · WebGL</span>
+            </a>
+          </li>
+          <li>
+            <a href="projects/wwise-portfolio.html">
+              <span class="project-list__title">Wwise Portfolio Project</span>
+              <span class="project-list__desc">Sound design, mixing, and final export</span>
+              <span class="project-list__tech">Wwise · Sound Design</span>
+            </a>
+          </li>
+          <li>
+            <a href="projects/short-film-editor.html">
+              <span class="project-list__title">Short Film Editor</span>
+              <span class="project-list__desc">Sound design, mixing, and final export</span>
+              <span class="project-list__tech">Editing · Sound Design · Mixing</span>
+            </a>
+          </li>
+          <li>
+            <a href="projects/multi-camera-tv.html">
+              <span class="project-list__title">Multi-Camera Television Production</span>
+              <span class="project-list__desc">NYU studio production — boom &amp; lav audio</span>
+              <span class="project-list__tech">Production Audio · Boom · Lavalier</span>
             </a>
           </li>
         </ul>
       </section>
 
-      <section id="music" class="section section--music" aria-labelledby="music-heading">
-        <header class="section__header">
-          <h2 id="music-heading">Music</h2>
-          <p>Original tracks hosted on Newgrounds.</p>
-        </header>
-
+      <section id="music" class="section">
+        <h2>Music</h2>
         <ul class="track-list">
           <li class="track">
-            <div class="track__info">
-              <h3>Calm Down</h3>
-              <a
-                class="track__ng"
-                href="https://www.newgrounds.com/audio/listen/1592675"
-                target="_blank"
-                rel="noopener"
-                >Open on Newgrounds</a
-              >
-            </div>
-            <audio controls preload="none">
-              <source
-                src="https://audio.ngfiles.com/1592000/1592675_Calm-Down.mp3?f1783751310"
-                type="audio/mpeg"
-              />
-              Your browser does not support the audio element.
+            <a class="track__title" href="https://www.newgrounds.com/audio/listen/1084435" target="_blank" rel="noopener">Aurora</a>
+            <audio controls preload="metadata">
+              <source src="Music/Aurora.mp3" type="audio/mpeg" />
             </audio>
+            <p class="track__meta">8,645 listens · 21 faves · 175 downloads · 4.46 score · Frontpaged October 15, 2021</p>
           </li>
           <li class="track">
-            <div class="track__info">
-              <h3>Next Stop</h3>
-              <a
-                class="track__ng"
-                href="https://www.newgrounds.com/audio/listen/1595418"
-                target="_blank"
-                rel="noopener"
-                >Open on Newgrounds</a
-              >
-            </div>
-            <audio controls preload="none">
-              <source
-                src="https://audio.ngfiles.com/1595000/1595418_Next-Stop.mp3?f1784267973"
-                type="audio/mpeg"
-              />
-              Your browser does not support the audio element.
+            <a class="track__title" href="https://www.newgrounds.com/audio/listen/1592675" target="_blank" rel="noopener">Calm Down</a>
+            <audio controls preload="metadata">
+              <source src="Music/Calmdown.wav" type="audio/wav" />
             </audio>
+            <p class="track__meta">4,686 listens · 10 faves · 96 downloads · 4.66 score · Frontpaged July 11, 2026</p>
           </li>
           <li class="track">
-            <div class="track__info">
-              <h3>Interior</h3>
-              <a
-                class="track__ng"
-                href="https://www.newgrounds.com/audio/listen/1299355"
-                target="_blank"
-                rel="noopener"
-                >Open on Newgrounds</a
-              >
-            </div>
-            <audio controls preload="none">
-              <source
-                src="https://audio.ngfiles.com/1299000/1299355_Interior.mp3?f1709195586"
-                type="audio/mpeg"
-              />
-              Your browser does not support the audio element.
+            <a class="track__title" href="https://www.newgrounds.com/audio/listen/1595418" target="_blank" rel="noopener">Next Stop</a>
+            <audio controls preload="metadata">
+              <source src="Music/Next%20Stop.mp3" type="audio/mpeg" />
             </audio>
+            <p class="track__meta">4,746 listens · 10 faves · 78 downloads · 4.31 score · Frontpaged July 17, 2026</p>
           </li>
           <li class="track">
-            <div class="track__info">
-              <h3>Genesis</h3>
-              <a
-                class="track__ng"
-                href="https://www.newgrounds.com/audio/listen/1251895"
-                target="_blank"
-                rel="noopener"
-                >Open on Newgrounds</a
-              >
-            </div>
-            <audio controls preload="none">
-              <source
-                src="https://audio.ngfiles.com/1251000/1251895_Genesis.mp3?f1696325217"
-                type="audio/mpeg"
-              />
-              Your browser does not support the audio element.
+            <a class="track__title" href="https://www.newgrounds.com/audio/listen/1299355" target="_blank" rel="noopener">Interior</a>
+            <audio controls preload="metadata">
+              <source src="Music/Interior.mp3" type="audio/mpeg" />
             </audio>
+            <p class="track__meta">158 listens · 2 downloads</p>
           </li>
           <li class="track">
-            <div class="track__info">
-              <h3>Aurora</h3>
-              <a
-                class="track__ng"
-                href="https://www.newgrounds.com/audio/listen/1084435"
-                target="_blank"
-                rel="noopener"
-                >Open on Newgrounds</a
-              >
-            </div>
-            <audio controls preload="none">
-              <source
-                src="https://audio.ngfiles.com/1084000/1084435_Aurora.mp3?f1634329407"
-                type="audio/mpeg"
-              />
-              Your browser does not support the audio element.
+            <a class="track__title" href="https://www.newgrounds.com/audio/listen/1251895" target="_blank" rel="noopener">Genesis</a>
+            <audio controls preload="metadata">
+              <source src="Music/Genesis.mp3" type="audio/mpeg" />
             </audio>
+            <p class="track__meta">368 listens · 2 faves · 3 downloads · 4.31 score</p>
           </li>
         </ul>
+        <p class="music-other">
+          <a href="other-music.html">Other</a>
+        </p>
       </section>
 
-      <section id="about" class="section section--about" aria-labelledby="about-heading">
-        <header class="section__header">
-          <h2 id="about-heading">About</h2>
-        </header>
-        <div class="about-layout">
-          <p class="about-copy">
-            I’m a technical audio designer who builds the systems behind the sound —
-            Wwise hierarchies, Unity integration, and the C# glue that makes adaptive
-            audio reliable in play. I care about clear pipelines, designer-friendly tools,
-            and audio that reacts as sharply as the gameplay.
-          </p>
-        </div>
-      </section>
-
-      <section id="contact" class="section section--contact" aria-labelledby="contact-heading">
-        <header class="section__header">
-          <h2 id="contact-heading">Contact</h2>
-          <p>Open to technical audio roles, contract work, and collaborations.</p>
-        </header>
-        <ul class="contact-links">
-          <li>
-            <a href="mailto:Jacquelinebabc@gmail.com">Email</a>
-          </li>
-          <li>
-            <a href="https://github.com/jacqueline-b" target="_blank" rel="noopener">GitHub</a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/YOUR_LINKEDIN" target="_blank" rel="noopener">LinkedIn</a>
-          </li>
-        </ul>
-      </section>
     </main>
-
-    <footer class="site-footer">
-      <p>&copy; <span data-year></span> Jacqueline Babcock</p>
-    </footer>
 
     <script src="js/main.js"></script>
   </body>

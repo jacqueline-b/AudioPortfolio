@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="MazeWeb — Unity WebGL maze experience by Jacqueline Babcock." />
+    <meta name="description" content="MazeWeb — Unity WebGL maze by Jacqueline Babcock." />
     <title>MazeWeb — Jacqueline Babcock</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/styles.css" />
@@ -16,101 +16,65 @@
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
 
-    <header class="page-header">
-      <a class="back-link" href="../index.html#projects">← Projects</a>
-      <a class="logo" href="../index.html">JB</a>
-    </header>
-
-    <main id="main">
-      <header class="project-hero">
-        <p class="project-hero__meta">Featured Project</p>
-        <h1>MazeWeb</h1>
-        <p class="project-hero__lede">
-          Unity WebGL maze game wrapped in a custom browser shell with integrated audio.
-        </p>
-        <p class="project-hero__actions">
-          <a
-            class="btn btn--primary"
-            href="https://mazeweb-six.vercel.app"
-            target="_blank"
-            rel="noopener"
-            >Play live</a
-          >
-          <a
-            class="btn btn--ghost-dark"
-            href="https://github.com/jacqueline-b/mazeweb"
-            target="_blank"
-            rel="noopener"
-            >View on GitHub</a
-          >
-        </p>
-      </header>
+    <main id="main" class="project-page">
+      <p class="back-link"><a href="../index.html#projects">← Projects</a></p>
+      <h1>MazeWeb</h1>
+      <p class="lede">Unity WebGL maze game in a custom browser shell with integrated audio.</p>
+      <p class="project-actions">
+        <a href="https://mazeweb-six.vercel.app" target="_blank" rel="noopener">Play live</a>
+        <a href="https://github.com/jacqueline-b/mazeweb" target="_blank" rel="noopener">GitHub</a>
+      </p>
 
       <div class="project-layout">
-        <article class="project-body">
-          <section class="project-block" aria-labelledby="overview">
-            <h2 id="overview">Overview</h2>
+        <article>
+          <section class="project-block">
+            <h2>Overview</h2>
             <p>
-              MazeWeb embeds a Unity WebGL maze build inside a custom web shell — complete
-              with UI chrome, video intro, and JavaScript audio/interaction layers — so the
-              game runs as a full browser experience rather than a bare canvas.
+              Unity WebGL maze build embedded in a custom web shell — UI chrome, video intro,
+              and JavaScript audio/interaction layers.
             </p>
           </section>
 
-          <section class="project-block" aria-labelledby="role">
-            <h2 id="role">Role</h2>
-            <p>Developer / Technical Audio — replace with your exact credit.</p>
+          <section class="project-block">
+            <h2>Role</h2>
+            <p>Developer</p>
           </section>
 
-          <section class="project-block" aria-labelledby="tools">
-            <h2 id="tools">Tools</h2>
-            <ul class="tools-inline">
-              <li>Unity</li>
-              <li>WebGL</li>
-              <li>JavaScript</li>
-              <li>C#</li>
-              <li>Git</li>
-            </ul>
-          </section>
-
-          <section class="project-block" aria-labelledby="responsibilities">
-            <h2 id="responsibilities">Responsibilities</h2>
+          <section class="project-block">
+            <h2>Contributions</h2>
             <ul>
-              <li>Replace with 3–5 bullets describing what you personally owned.</li>
-              <li>Example: built or tuned the web shell around the Unity WebGL embed.</li>
-              <li>Example: integrated audio via the site’s JS audio layer.</li>
-              <li>Example: shipped and hosted the build on Vercel.</li>
+              <li>Replace with what you owned on this project.</li>
+              <li>Example: web shell around the Unity embed.</li>
+              <li>Example: audio integration / Vercel deploy.</li>
             </ul>
           </section>
 
-          <section class="project-block" aria-labelledby="media">
-            <h2 id="media">Media</h2>
+          <section class="project-block">
+            <h2>Media</h2>
             <div class="media-grid">
               <figure class="media-item">
                 <div class="media-placeholder">Gameplay video</div>
-                <figcaption>Add a browser gameplay capture when ready.</figcaption>
+                <figcaption>Add when ready.</figcaption>
               </figure>
               <figure class="media-item">
                 <div class="media-placeholder">Screenshot</div>
-                <figcaption>Add a shell / maze screenshot when ready.</figcaption>
-              </figure>
-              <figure class="media-item">
-                <div class="media-placeholder">Audio</div>
-                <figcaption>Optional: mix or ambience demo from the experience.</figcaption>
+                <figcaption>Add when ready.</figcaption>
               </figure>
             </div>
           </section>
 
-          <section class="project-block" aria-labelledby="lessons">
-            <h2 id="lessons">Lessons Learned</h2>
-            <p>
-              Replace with one short paragraph — for example, what embedding Unity in a
-              custom web UI taught you about load times, audio unlock, or player onboarding.
-            </p>
+          <section class="project-block">
+            <h2>Challenges</h2>
+            <p>Replace with one short paragraph.</p>
+          </section>
+
+          <section class="project-block">
+            <h2>Lessons Learned</h2>
+            <p>Replace with one short paragraph.</p>
           </section>
         </article>
 
-        <aside class="tech-box" aria-label="Project tech summary">
+        <aside class="tech-box" aria-label="Project summary">
           <div class="tech-box__group">
             <p class="tech-box__label">Tools</p>
             <ul class="tech-box__list">
@@ -151,11 +115,5 @@
         </aside>
       </div>
     </main>
-
-    <footer class="site-footer">
-      <p>&copy; <span data-year></span> Jacqueline Babcock</p>
-    </footer>
-
-    <script src="../js/main.js"></script>
   </body>
 </html>
