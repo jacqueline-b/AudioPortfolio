@@ -51,15 +51,67 @@
 
           <section class="project-block">
             <h2>Media</h2>
-            <div class="media-grid">
-              <figure class="media-item">
-                <div class="media-placeholder">Gameplay video</div>
-                <figcaption>Add when ready.</figcaption>
-              </figure>
-              <figure class="media-item">
-                <div class="media-placeholder">Screenshot</div>
-                <figcaption>Add when ready.</figcaption>
-              </figure>
+            <div
+              class="slideshow"
+              data-slideshow
+              aria-roledescription="carousel"
+              aria-label="MazeWeb screenshots"
+            >
+              <div class="slideshow__viewport">
+                <figure class="slideshow__slide is-active">
+                  <img
+                    src="../Screenshots/Mazeweb/mazeweb-2.png"
+                    alt="MazeWeb screenshot 1"
+                    width="1280"
+                    height="720"
+                  />
+                </figure>
+                <figure class="slideshow__slide">
+                  <img
+                    src="../Screenshots/Mazeweb/mazeweb-1.png"
+                    alt="MazeWeb screenshot 2"
+                    width="1280"
+                    height="720"
+                  />
+                </figure>
+                <figure class="slideshow__slide">
+                  <img
+                    src="../Screenshots/Mazeweb/mazeweb-3.png"
+                    alt="MazeWeb screenshot 3"
+                    width="1280"
+                    height="720"
+                  />
+                </figure>
+                <figure class="slideshow__slide">
+                  <img
+                    src="../Screenshots/Mazeweb/mazeweb-4.png"
+                    alt="MazeWeb screenshot 4"
+                    width="1280"
+                    height="720"
+                  />
+                </figure>
+              </div>
+              <div class="slideshow__controls">
+                <button type="button" class="slideshow__btn" data-slideshow-prev aria-label="Previous screenshot">
+                  ←
+                </button>
+                <div class="slideshow__dots" data-slideshow-dots>
+                  <button type="button" class="is-active" aria-label="Show screenshot 1"></button>
+                  <button type="button" aria-label="Show screenshot 2"></button>
+                  <button type="button" aria-label="Show screenshot 3"></button>
+                  <button type="button" aria-label="Show screenshot 4"></button>
+                </div>
+                <button type="button" class="slideshow__btn" data-slideshow-next aria-label="Next screenshot">
+                  →
+                </button>
+              </div>
+            </div>
+
+            <div class="lightbox" data-lightbox hidden>
+              <button type="button" class="lightbox__close" data-lightbox-close aria-label="Close enlarged image">
+                ×
+              </button>
+              <img data-lightbox-img alt="" />
             </div>
           </section>
 
@@ -115,5 +167,6 @@
         </aside>
       </div>
     </main>
+    <script src="../js/main.js"></script>
   </body>
 </html>
