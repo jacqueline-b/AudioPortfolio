@@ -183,12 +183,6 @@ main {
   justify-self: start;
 }
 
-.track__blurb {
-  margin: 0;
-  font-size: 0.92rem;
-  color: var(--muted);
-}
-
 .track__meta {
   margin: 0;
   font-size: 0.82rem;
@@ -353,11 +347,10 @@ span.track__title {
   font-size: 0.8rem;
 }
 
-.media-item figcaption {
-  padding: 0.5rem 0.65rem;
-  font-size: 0.8rem;
-  color: var(--muted);
-  border-top: 1px solid var(--line);
+.media-item video {
+  display: block;
+  width: 100%;
+  background: #1a1a1a;
 }
 
 .slideshow {

@@ -62,7 +62,6 @@
     </main>
 
     <script>
-      // Boost m4a playback (WAV files were amplified on disk).
       document.querySelectorAll("audio[data-gain]").forEach((audio) => {
         const gainValue = Number(audio.dataset.gain) || 1;
         let connected = false;

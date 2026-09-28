@@ -19,7 +19,10 @@
     <main id="main" class="project-page">
       <p class="back-link"><a href="../index.html#projects">← Projects</a></p>
       <h1>MazeWeb</h1>
-      <p class="lede">Unity WebGL maze game in a custom browser shell with integrated audio.</p>
+      <p class="lede">
+        Web-design class: a handheld-style site where JavaScript owns the maze and Unity WebGL
+        draws it — original music stems signal special tiles and the exit.
+      </p>
       <p class="project-actions">
         <a href="https://mazeweb-six.vercel.app" target="_blank" rel="noopener">Play live</a>
         <a href="https://github.com/jacqueline-b/mazeweb" target="_blank" rel="noopener">GitHub</a>
@@ -30,22 +33,41 @@
           <section class="project-block">
             <h2>Overview</h2>
             <p>
-              Unity WebGL maze build embedded in a custom web shell — UI chrome, video intro,
-              and JavaScript audio/interaction layers.
+              A full game inside a website made to feel like a toy handheld. JavaScript
+              generates the maze and rules (find every special tile, then the exit). Unity
+              WebGL builds the 3D world from that grid via prefabs. Music I wrote sits in
+              looping stems: a base bed always there, then extra layers that fade in based
+              on how many walkable tiles you are from a special tile or the exit.
             </p>
           </section>
 
           <section class="project-block">
             <h2>Role</h2>
-            <p>Developer</p>
+            <p>Designer / Programmer / Sound</p>
           </section>
 
           <section class="project-block">
             <h2>Contributions</h2>
             <ul>
-              <li>Replace with what you owned on this project.</li>
-              <li>Example: web shell around the Unity embed.</li>
-              <li>Example: audio integration / Vercel deploy.</li>
+              <li>
+                Designed the loop and wrote the maze in JavaScript: random generation, player
+                controls, special tiles, exit, and win state.
+              </li>
+              <li>
+                Unity WebGL as the view: engine reads the JS maze over the DOM/SendMessage
+                bridge and instances prefab tiles to match the grid.
+              </li>
+              <li>
+                Audio: walking SFX timed to movement with slight variation. Original stem
+                music — ambience always on; special and exit layers fade in as you get
+                fewer walkable tiles away (path distance, not a straight line), then fade
+                out when you leave, so the mix tells you what’s close without a UI ping.
+              </li>
+              <li>
+                Handheld shell around that — menus, special-room counter, volume, reset, UX
+                chrome. Used Cursor to implement that UI and some JS↔Unity glue; maze logic,
+                rules, music, and audio direction are mine.
+              </li>
             </ul>
           </section>
 
@@ -117,12 +139,20 @@
 
           <section class="project-block">
             <h2>Challenges</h2>
-            <p>Replace with one short paragraph.</p>
+            <p>
+              Keeping one maze in JavaScript and a matching 3D layout in Unity without the
+              two drifting — plus mixing stem layers so they cue the player without fighting
+              footsteps.
+            </p>
           </section>
 
           <section class="project-block">
             <h2>Lessons Learned</h2>
-            <p>Replace with one short paragraph.</p>
+            <p>
+              Treat JS as the game and Unity as the renderer. Proximity stems did more for
+              “where am I going?” than extra UI. Cursor is part of how I ship chrome and
+              glue; I still own the rules, the music, and what the audio is supposed to do.
+            </p>
           </section>
         </article>
 
@@ -130,23 +160,24 @@
           <div class="tech-box__group">
             <p class="tech-box__label">Tools</p>
             <ul class="tech-box__list">
+              <li>JavaScript</li>
               <li>Unity</li>
               <li>WebGL</li>
-              <li>JavaScript</li>
-              <li>Git</li>
+              <li>C#</li>
+              <li>Cursor</li>
             </ul>
           </div>
           <div class="tech-box__group">
             <p class="tech-box__label">Role</p>
-            <p class="tech-box__value">Developer</p>
+            <p class="tech-box__value">Designer / Programmer / Sound</p>
           </div>
           <div class="tech-box__group">
-            <p class="tech-box__label">Duration</p>
-            <p class="tech-box__value">Ongoing</p>
+            <p class="tech-box__label">Context</p>
+            <p class="tech-box__value">Web design class</p>
           </div>
           <div class="tech-box__group">
             <p class="tech-box__label">Team</p>
-            <p class="tech-box__value">Solo / small team</p>
+            <p class="tech-box__value">Solo</p>
           </div>
           <div class="tech-box__group">
             <p class="tech-box__label">Source</p>
