@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Jacqueline Babcock — Resume</title>
+    <style>
+      @page {
+        size: letter;
+        margin: 0.5in 0.65in 0.45in;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background: #fff;
+        color: #000;
+        font-family: Calibri, "Segoe UI", Arial, sans-serif;
+        font-size: 10.5pt;
+        line-height: 1.15;
+      }
+      h1 {
+        margin: 0 0 0.06in;
+        font-size: 20pt;
+        font-weight: 700;
+        text-align: center;
+        letter-spacing: 0.01em;
+      }
+      .contact {
+        margin: 0 0 0.1in;
+        text-align: center;
+        font-size: 10pt;
+      }
+      h2 {
+        margin: 0.08in 0 0.04in;
+        padding-bottom: 0.02in;
+        font-size: 11pt;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        border-bottom: 0.75pt solid #000;
+      }
+      p {
+        margin: 0 0 0.04in;
+      }
+      .job {
+        margin: 0 0 0.05in;
+      }
+      .job__row {
+        display: flex;
+        justify-content: space-between;
+        gap: 0.25in;
+        align-items: baseline;
+      }
+      .job__title,
+      .job__org {
+        font-weight: 700;
+      }
+      .job__dates,
+      .job__loc {
+        white-space: nowrap;
+      }
+      .job__role {
+        font-style: italic;
+        font-weight: 400;
+      }
+      ul {
+        margin: 0.02in 0 0;
+        padding-left: 0.2in;
+      }
+      li {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Jacqueline Babcock</h1>
+    <p class="contact">
+      Brooklyn, NY 11237 | Jacquelinebabc@gmail.com | (620) 617-1833 |
+      jacquelinebabc.com
+    </p>
+
+    <h2>Professional Summary</h2>
+    <p>
+      BFA candidate in Film and Television at NYU (August 2026) targeting game audio internships
+      and game/audio QA. Sound design and implementation in Unity and Wwise, with C# and C++
+      to hook systems up. Production audio, ADR, dialogue edit, and mix from film and TV coursework;
+      Git and Agile from shipping a student game.
+    </p>
+
+    <h2>Education</h2>
+    <div class="job">
+      <div class="job__row">
+        <span class="job__org">New York University</span>
+        <span class="job__loc">New York, NY</span>
+      </div>
+      <div class="job__row">
+        <span>Bachelor of Fine Arts in Film and Television</span>
+        <span class="job__dates">August 2026</span>
+      </div>
+    </div>
+
+    <h2>Experience</h2>
+    <div class="job">
+      <div class="job__row">
+        <span class="job__title">Video Editor</span>
+        <span class="job__dates">September 2025 – November 2025</span>
+      </div>
+      <div class="job__row">
+        <span>Self-Employed</span>
+        <span class="job__loc">New York, NY</span>
+      </div>
+      <ul>
+        <li>
+          Collaborated with a director and client to incorporate feedback throughout the
+          editing process.
+        </li>
+        <li>
+          Delivered rough drafts and final edits on schedule while meeting project expectations
+          and quality standards.
+        </li>
+      </ul>
+    </div>
+    <div class="job">
+      <div class="job__row">
+        <span class="job__title">Front End/Stocking Assistant</span>
+        <span class="job__dates">March 2020 – 2022</span>
+      </div>
+      <div class="job__row">
+        <span>Kroger</span>
+        <span class="job__loc">Great Bend, KS</span>
+      </div>
+      <ul>
+        <li>
+          Assisted customers with questions and purchases; kept inventory and the floor
+          organized through opening and closing tasks.
+        </li>
+        <li>
+          Collaborated with team members to complete daily department responsibilities.
+        </li>
+      </ul>
+    </div>
+
+    <h2>Projects</h2>
+    <div class="job">
+      <div class="job__row">
+        <span class="job__title">MazeWeb</span>
+        <span class="job__role">Designer / Programmer / Sound</span>
+      </div>
+      <ul>
+        <li>
+          Authored maze generation, controls, and win state in JavaScript; Unity WebGL renders
+          the 3D grid from that data.
+        </li>
+        <li>
+          Wrote original stem music and walking SFX; extra layers fade by walkable-tile distance
+          to special tiles and the exit.
+        </li>
+      </ul>
+    </div>
+    <div class="job">
+      <div class="job__row">
+        <span class="job__title">Group5 FPS</span>
+        <span class="job__role">Lead Programmer</span>
+      </div>
+      <ul>
+        <li>
+          Led three programmers on an 8-person Unity FPS: sprint assignment, Git review/merge,
+          and QA with repro notes before standup.
+        </li>
+        <li>
+          Coordinated with the lead designer on tools and mechanics through weekly Agile sprints
+          to a shipped MVP.
+        </li>
+      </ul>
+    </div>
+    <div class="job">
+      <div class="job__row">
+        <span class="job__title">Short Film</span>
+        <span class="job__role">Sound Design / Mix</span>
+      </div>
+      <ul>
+        <li>
+          Dialogue edit (boom vs lav, L/J cuts), sound design and room tone on MOS, then
+          mix/master and music to picture lock.
+        </li>
+        <li>
+          Script supervisor on set: continuity, production-sound notes, and location wilds so
+          post had a paper trail.
+        </li>
+      </ul>
+    </div>
+    <div class="job">
+      <div class="job__row">
+        <span class="job__title">NYU Sight &amp; Sound: Studio</span>
+        <span class="job__role">Production Audio / ADR</span>
+      </div>
+      <ul>
+        <li>
+          Live multi-cam: wired lavs, mixed from script, recorded split tracks; ADR in Pro Tools
+          with picture, named files, and talent in the booth.
+        </li>
+      </ul>
+    </div>
+
+    <h2>Skills</h2>
+    <p>
+      <strong>Technical:</strong> Unity · UE5 · Wwise · Pro Tools · C# · C++ · Git · JavaScript
+    </p>
+    <p>
+      <strong>Audio:</strong> Sound design · Implementation · Mixing · Dialogue edit · Production
+      audio · ADR
+    </p>
+    <p>Phi Theta Kappa Honor Society (2022). English (Native).</p>
+  </body>
+</html>
