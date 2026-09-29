@@ -55,6 +55,10 @@ main {
   padding: var(--space);
 }
 
+main.project-page {
+  max-width: 58rem;
+}
+
 .hero {
   padding: 3rem 0 2.5rem;
   border-bottom: 1px solid var(--line);
@@ -278,7 +282,7 @@ span.track__title {
 
 @media (min-width: 720px) {
   .project-layout {
-    grid-template-columns: minmax(0, 1fr) 12rem;
+    grid-template-columns: minmax(0, 1fr) 13.5rem;
     gap: 2.5rem;
   }
 }
@@ -333,6 +337,41 @@ span.track__title {
   gap: 0.75rem;
 }
 
+.project-media {
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--line);
+}
+
+.project-media h2 {
+  margin: 0 0 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.project-media .media-grid {
+  grid-template-columns: 1fr;
+}
+
+.project-media .media-placeholder {
+  min-height: 22rem;
+  aspect-ratio: 16 / 9;
+}
+
+.project-media .media-item video {
+  min-height: 18rem;
+}
+
+.media-item figcaption {
+  margin: 0;
+  padding: 0.55rem 0.7rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
 .media-item {
   margin: 0;
   border: 1px solid var(--line);
@@ -360,7 +399,8 @@ span.track__title {
 
 .slideshow__viewport {
   position: relative;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 16 / 9;
+  min-height: 22rem;
   overflow: hidden;
   background: #ddd;
   cursor: zoom-in;
@@ -515,8 +555,9 @@ body.lightbox-open {
   margin: 0;
   padding: 0;
   list-style: none;
-  font-size: 0.95rem;
+  font-size: 0.92rem;
   font-weight: 500;
+  line-height: 1.4;
 }
 
 .tech-box a {

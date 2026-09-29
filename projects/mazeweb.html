@@ -42,11 +42,6 @@
           </section>
 
           <section class="project-block">
-            <h2>Role</h2>
-            <p>Designer / Programmer / Sound</p>
-          </section>
-
-          <section class="project-block">
             <h2>Contributions</h2>
             <ul>
               <li>
@@ -72,72 +67,6 @@
           </section>
 
           <section class="project-block">
-            <h2>Media</h2>
-            <div
-              class="slideshow"
-              data-slideshow
-              aria-roledescription="carousel"
-              aria-label="MazeWeb screenshots"
-            >
-              <div class="slideshow__viewport">
-                <figure class="slideshow__slide is-active">
-                  <img
-                    src="../Screenshots/Mazeweb/mazeweb-2.png"
-                    alt="MazeWeb screenshot 1"
-                    width="1280"
-                    height="720"
-                  />
-                </figure>
-                <figure class="slideshow__slide">
-                  <img
-                    src="../Screenshots/Mazeweb/mazeweb-1.png"
-                    alt="MazeWeb screenshot 2"
-                    width="1280"
-                    height="720"
-                  />
-                </figure>
-                <figure class="slideshow__slide">
-                  <img
-                    src="../Screenshots/Mazeweb/mazeweb-3.png"
-                    alt="MazeWeb screenshot 3"
-                    width="1280"
-                    height="720"
-                  />
-                </figure>
-                <figure class="slideshow__slide">
-                  <img
-                    src="../Screenshots/Mazeweb/mazeweb-4.png"
-                    alt="MazeWeb screenshot 4"
-                    width="1280"
-                    height="720"
-                  />
-                </figure>
-              </div>
-              <div class="slideshow__controls">
-                <button type="button" class="slideshow__btn" data-slideshow-prev aria-label="Previous screenshot">
-                  ←
-                </button>
-                <div class="slideshow__dots" data-slideshow-dots>
-                  <button type="button" class="is-active" aria-label="Show screenshot 1"></button>
-                  <button type="button" aria-label="Show screenshot 2"></button>
-                  <button type="button" aria-label="Show screenshot 3"></button>
-                  <button type="button" aria-label="Show screenshot 4"></button>
-                </div>
-                <button type="button" class="slideshow__btn" data-slideshow-next aria-label="Next screenshot">
-                  →
-                </button>
-              </div>
-            </div>
-
-            <div class="lightbox" data-lightbox hidden>
-              <button type="button" class="lightbox__close" data-lightbox-close aria-label="Close enlarged image">
-                ×
-              </button>
-              <img data-lightbox-img alt="" />
-            </div>
-          </section>
-
-          <section class="project-block">
             <h2>Challenges</h2>
             <p>
               Keeping one maze in JavaScript and a matching 3D layout in Unity without the
@@ -158,6 +87,10 @@
 
         <aside class="tech-box" aria-label="Project summary">
           <div class="tech-box__group">
+            <p class="tech-box__label">Role</p>
+            <p class="tech-box__value">Designer / Programmer / Sound</p>
+          </div>
+          <div class="tech-box__group">
             <p class="tech-box__label">Tools</p>
             <ul class="tech-box__list">
               <li>JavaScript</li>
@@ -166,10 +99,6 @@
               <li>C#</li>
               <li>Cursor</li>
             </ul>
-          </div>
-          <div class="tech-box__group">
-            <p class="tech-box__label">Role</p>
-            <p class="tech-box__value">Designer / Programmer / Sound</p>
           </div>
           <div class="tech-box__group">
             <p class="tech-box__label">Context</p>
@@ -197,6 +126,72 @@
           </div>
         </aside>
       </div>
+
+      <section class="project-media">
+        <h2>Media</h2>
+        <div
+          class="slideshow"
+          data-slideshow
+          aria-roledescription="carousel"
+          aria-label="MazeWeb screenshots"
+        >
+          <div class="slideshow__viewport">
+            <figure class="slideshow__slide is-active">
+              <img
+                src="../Screenshots/Mazeweb/mazeweb-2.png"
+                alt="MazeWeb screenshot 1"
+                width="1280"
+                height="720"
+              />
+            </figure>
+            <figure class="slideshow__slide">
+              <img
+                src="../Screenshots/Mazeweb/mazeweb-1.png"
+                alt="MazeWeb screenshot 2"
+                width="1280"
+                height="720"
+              />
+            </figure>
+            <figure class="slideshow__slide">
+              <img
+                src="../Screenshots/Mazeweb/mazeweb-3.png"
+                alt="MazeWeb screenshot 3"
+                width="1280"
+                height="720"
+              />
+            </figure>
+            <figure class="slideshow__slide">
+              <img
+                src="../Screenshots/Mazeweb/mazeweb-4.png"
+                alt="MazeWeb screenshot 4"
+                width="1280"
+                height="720"
+              />
+            </figure>
+          </div>
+          <div class="slideshow__controls">
+            <button type="button" class="slideshow__btn" data-slideshow-prev aria-label="Previous screenshot">
+              ←
+            </button>
+            <div class="slideshow__dots" data-slideshow-dots>
+              <button type="button" class="is-active" aria-label="Show screenshot 1"></button>
+              <button type="button" aria-label="Show screenshot 2"></button>
+              <button type="button" aria-label="Show screenshot 3"></button>
+              <button type="button" aria-label="Show screenshot 4"></button>
+            </div>
+            <button type="button" class="slideshow__btn" data-slideshow-next aria-label="Next screenshot">
+              →
+            </button>
+          </div>
+        </div>
+
+        <div class="lightbox" data-lightbox hidden>
+          <button type="button" class="lightbox__close" data-lightbox-close aria-label="Close enlarged image">
+            ×
+          </button>
+          <img data-lightbox-img alt="" />
+        </div>
+      </section>
     </main>
     <script src="../js/main.js"></script>
   </body>
