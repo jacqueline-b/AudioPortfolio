@@ -20,8 +20,8 @@
       <p class="back-link"><a href="../index.html#projects">← Projects</a></p>
       <h1>MazeWeb</h1>
       <p class="lede">
-        Web design class. JavaScript maze, Unity WebGL view, original music stems for special
-        tiles and the exit.
+        Web design class. JavaScript owns the maze. Unity WebGL draws it. Original stem music
+        in JS. Live page is HTML/CSS; more UI in React.
       </p>
       <p class="project-actions">
         <a href="https://mazeweb-six.vercel.app" target="_blank" rel="noopener">Play live</a>
@@ -33,11 +33,13 @@
           <section class="project-block">
             <h2>Overview</h2>
             <p>
-              A game on a website, laid out like a toy handheld. JavaScript generates the maze
-              and the rules (hit every special tile, then the exit). Unity WebGL builds the 3D
-              world from that grid with prefabs. Music I wrote runs as looping stems: a bed
-              that’s always on, then extra layers that fade in by how many walkable tiles you
-              are from a special tile or the exit (path distance, not a straight line).
+              A game on a website, laid out like a toy handheld. The shipped page is HTML, CSS,
+              and JavaScript. maze.js is the game: random maze, movement, special tiles, exit,
+              then a hallway and an open field. Unity WebGL is the 3D view of that grid.
+              Music I wrote is mixed in JavaScript (audio.js): two ambient beds, plus layers for
+              special, exit, hallway, and field. Extra layers fade by walkable-tile path
+              distance, not a straight line. React is a Vite app (react-ui) for more handheld
+              UI, not the live HTML page.
             </p>
           </section>
 
@@ -45,20 +47,23 @@
             <h2>Contributions</h2>
             <ul>
               <li>
-                Designed the loop and wrote the maze in JavaScript: random generation, player
-                controls, special tiles, exit, win state.
+                Wrote the maze in JavaScript: random generation, controls, special tiles, exit,
+                hallway, field, win state.
               </li>
               <li>
-                Unity WebGL draws the 3D grid from that JS maze (DOM / SendMessage, prefab tiles).
+                Unity WebGL draws the 3D maze from that JS grid. The page talks to the Unity
+                instance (SendMessage), including game volume.
               </li>
               <li>
-                Walking SFX on movement, slight variation. Stem music: ambience always on; special
-                and exit layers fade in by walkable-tile path distance (not a straight line), fade
-                out when you leave, so the mix tells you what’s close without an extra UI ping.
+                Walking SFX in Unity (timed to movement, slight variation). Stem mix in
+                JavaScript: ambience always on; special, exit, hallway, and field layers fade
+                by walkable-tile path distance, then fade out when you leave.
               </li>
               <li>
-                Menus, special-room counter, volume, reset. Cursor did some of the UI and the
-                JS–Unity connection. Maze logic, rules, music, and audio direction are mine.
+                HTML and CSS for the live handheld shell (menus, special-room counter, volume,
+                reset). React in a Vite app (react-ui) for more of that UI. Cursor helped with
+                UI glue and the JS–Unity embed. Maze logic, rules, music, and audio direction
+                are mine.
               </li>
             </ul>
           </section>
@@ -72,7 +77,7 @@
             <p>
               Tuning the dynamic music in JavaScript, not Unity: when a layer starts (distance),
               how it sits on the bed, how it fades out, the mix. Footsteps were in Unity; the
-              stems were not.
+              stems (including hallway and field) were not.
             </p>
           </section>
 
@@ -99,7 +104,10 @@
           <div class="tech-box__group">
             <p class="tech-box__label">Tools</p>
             <ul class="tech-box__list">
+              <li>HTML</li>
+              <li>CSS</li>
               <li>JavaScript</li>
+              <li>React</li>
               <li>Unity</li>
               <li>WebGL</li>
               <li>C#</li>

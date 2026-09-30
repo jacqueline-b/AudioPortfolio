@@ -365,8 +365,8 @@ span.track__title {
   aspect-ratio: 16 / 9;
 }
 
-.project-media .media-item video {
-  min-height: 18rem;
+.project-media .slideshow {
+  margin-top: 1.25rem;
 }
 
 .media-item figcaption {
