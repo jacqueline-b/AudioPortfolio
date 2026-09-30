@@ -117,6 +117,36 @@ main.project-page {
   color: var(--muted);
 }
 
+.section-heading {
+  margin: 0 0 0.85rem;
+}
+
+.section-heading h2 {
+  margin: 0;
+}
+
+.section-kicker {
+  margin: 0.35rem 0 0;
+  font-size: 0.92rem;
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--muted);
+  max-width: 36rem;
+}
+
+.section-kicker a {
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.music-tools {
+  margin: 0 0 1.15rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
 .section > p {
   margin: 0;
   color: var(--muted);
@@ -126,6 +156,10 @@ main.project-page {
 .about-education {
   margin-top: 0.75rem !important;
   font-size: 0.95rem;
+}
+
+.section > p + p {
+  margin-top: 0.7rem;
 }
 
 .project-list {
