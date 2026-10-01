@@ -33,20 +33,74 @@
       </section>
 
       <section id="about" class="section">
-        <h2>About</h2>
-        <p>
-          Visual arts and storytelling are what I care about. I take pride in the technical
-          side and the artistic side. I’m flexible, and I learn a lot as I go. Audio is the
-          through-line.
-        </p>
-        <p>
-          Sound design and implementation in Unity and Wwise, plus C# and C++.
-          Music, mixing, production audio, and ADR from film and TV at NYU. Git and Agile
-          on a student game.
-        </p>
-        <p class="about-education">
-          New York University, BFA Film &amp; Television — August 2026
-        </p>
+        <div class="about-tabs" role="tablist" aria-label="About">
+          <button
+            type="button"
+            class="about-tabs__tab"
+            role="tab"
+            id="tab-about"
+            aria-selected="true"
+            aria-controls="panel-about"
+            data-about-tab="about"
+          >
+            About
+          </button>
+          <button
+            type="button"
+            class="about-tabs__tab"
+            role="tab"
+            id="tab-why"
+            aria-selected="false"
+            aria-controls="panel-why"
+            data-about-tab="why"
+            tabindex="-1"
+          >
+            Why I do this
+          </button>
+        </div>
+        <div
+          class="about-panel"
+          id="panel-about"
+          role="tabpanel"
+          aria-labelledby="tab-about"
+          data-about-panel="about"
+        >
+          <p>
+            Sound design and implementation in Unity and Wwise, plus C# and C++.
+            Music, mixing, production audio, and ADR from film and TV at NYU. Git and Agile
+            on a student game.
+          </p>
+          <p class="about-education">
+            New York University, BFA Film &amp; Television — August 2026
+          </p>
+        </div>
+        <div
+          class="about-panel"
+          id="panel-why"
+          role="tabpanel"
+          aria-labelledby="tab-why"
+          data-about-panel="why"
+          hidden
+        >
+          <p>
+            At NYU I learned how story and craft have to sit together. Film, TV, games: the
+            art is why you make the thing, and the technical work is how it actually exists.
+            One without the other is a raft with no paddles. You have to know what you want
+            to make, or who you’re making it for. That decision sits under everything after.
+          </p>
+          <p>
+            Audio is easy to miss until it isn’t there. It finishes a picture — more present,
+            more of a place — or it tells you something the image never shows: a room next
+            door, something coming, something already over. It works on you as a body, not
+            only as a viewer. That’s the part I want to do well.
+          </p>
+          <p>
+            The other half is the back end. Ideas don’t show up on screen by themselves.
+            Programming, cameras, a crew, the limits of an engine or a shoot: that’s the
+            scaffolding. Doing that work is how I find out what an idea is even allowed to
+            be, and how to build it so someone can sit with it in real time.
+          </p>
+        </div>
       </section>
 
       <section id="projects" class="section">

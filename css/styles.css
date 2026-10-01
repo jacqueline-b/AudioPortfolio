@@ -147,19 +147,51 @@ main.project-page {
   color: var(--muted);
 }
 
-.section > p {
+.about-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.1rem;
+  margin: 0 0 1rem;
+}
+
+.about-tabs__tab {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.about-tabs__tab[aria-selected="true"] {
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 0.22em;
+}
+
+.about-tabs__tab:hover,
+.about-tabs__tab:focus-visible {
+  color: var(--ink);
+}
+
+.about-panel p {
   margin: 0;
   color: var(--muted);
   max-width: 36rem;
 }
 
+.about-panel p + p {
+  margin-top: 0.7rem;
+}
+
 .about-education {
   margin-top: 0.75rem !important;
   font-size: 0.95rem;
-}
-
-.section > p + p {
-  margin-top: 0.7rem;
 }
 
 .project-list {

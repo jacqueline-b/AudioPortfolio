@@ -54,3 +54,34 @@ document.querySelectorAll("[data-slideshow]").forEach((root) => {
     }
   });
 });
+
+const aboutTabs = document.querySelectorAll("[data-about-tab]");
+const aboutPanels = document.querySelectorAll("[data-about-panel]");
+const showAboutTab = (name) => {
+  aboutTabs.forEach((tab) => {
+    const on = tab.dataset.aboutTab === name;
+    tab.setAttribute("aria-selected", on ? "true" : "false");
+    tab.tabIndex = on ? 0 : -1;
+  });
+  aboutPanels.forEach((panel) => {
+    panel.hidden = panel.dataset.aboutPanel !== name;
+  });
+};
+aboutTabs.forEach((tab) => {
+  tab.addEventListener("click", () => showAboutTab(tab.dataset.aboutTab));
+});
+document.querySelector(".about-tabs")?.addEventListener("keydown", (event) => {
+  const tabs = [...aboutTabs];
+  const i = tabs.indexOf(document.activeElement);
+  if (i < 0) return;
+  if (event.key === "ArrowRight" || event.key === "ArrowLeft") {
+    event.preventDefault();
+    const next =
+      event.key === "ArrowRight"
+        ? (i + 1) % tabs.length
+        : (i - 1 + tabs.length) % tabs.length;
+    tabs[next].focus();
+    showAboutTab(tabs[next].dataset.aboutTab);
+  }
+});
+if (location.hash === "#why") showAboutTab("why");
