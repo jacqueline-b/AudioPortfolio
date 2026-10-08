@@ -347,6 +347,11 @@ span.track__title {
   text-underline-offset: 0.18em;
 }
 
+.project-note {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
 .project-layout {
   display: grid;
   gap: 2rem;

@@ -36,10 +36,10 @@
               A game on a website, laid out like a toy handheld. The shipped page is HTML, CSS,
               and JavaScript. maze.js is the game: random maze, movement, special tiles, exit,
               then a hallway and an open field. Unity WebGL is the 3D view of that grid.
-              Music I wrote is mixed in JavaScript (audio.js): two ambient beds, plus layers for
-              special, exit, hallway, and field. Extra layers fade by walkable-tile path
-              distance, not a straight line. React is a Vite app (react-ui) for more handheld
-              UI, not the live HTML page.
+              Original music stems are mixed in JavaScript (audio.js): ambient, special, and
+              exit. They mix by walkable-tile path distance, not a straight line, so the mix
+              signals where special tiles and the exit are. React is a Vite app (react-ui) for
+              more handheld UI, not the live HTML page.
             </p>
           </section>
 
@@ -55,15 +55,15 @@
                 instance (SendMessage), including game volume.
               </li>
               <li>
-                Walking SFX in Unity (timed to movement, slight variation). Stem mix in
-                JavaScript: ambience always on; special, exit, hallway, and field layers fade
-                by walkable-tile path distance, then fade out when you leave.
+                Walking SFX in Unity, timed to how long the player walks, with slight
+                variation. Stem mix in JavaScript: the ambient stem is always on; special and
+                exit stems fade in by walkable-tile path distance, then fade out when you leave.
               </li>
               <li>
-                HTML and CSS for the live handheld shell (menus, special-room counter, volume,
-                reset). React in a Vite app (react-ui) for more of that UI. Cursor helped with
-                UI glue and the JS–Unity embed. Maze logic, rules, music, and audio direction
-                are mine.
+                Handheld-style site shell in HTML and CSS (menus, special-room counter, volume
+                sliders, reset). React in a Vite app (react-ui) for more of that UI. Used Cursor
+                for the shell and the Unity embed, then read and debugged what it produced.
+                Maze logic, rules, music, and audio direction are mine.
               </li>
             </ul>
           </section>
@@ -77,7 +77,7 @@
             <p>
               Tuning the dynamic music in JavaScript, not Unity: when a layer starts (distance),
               how it sits on the bed, how it fades out, the mix. Footsteps were in Unity; the
-              stems (including hallway and field) were not.
+              stems were not.
             </p>
           </section>
 
@@ -106,7 +106,6 @@
             <ul class="tech-box__list">
               <li>HTML</li>
               <li>CSS</li>
-              <li>Dreamweaver</li>
               <li>JavaScript</li>
               <li>React</li>
               <li>Unity</li>
