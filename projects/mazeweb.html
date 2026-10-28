@@ -21,7 +21,7 @@
       <h1>MazeWeb</h1>
       <p class="lede">
         Web design class. JavaScript owns the maze. Unity WebGL draws it. Original stem music
-        in JS. Live page is HTML/CSS; more UI in React.
+        in JS. Handheld shell in HTML/CSS; menu panels and settings in React.
       </p>
       <p class="project-actions">
         <a href="https://mazeweb-six.vercel.app" target="_blank" rel="noopener">Play live</a>
@@ -38,8 +38,8 @@
               then a hallway and an open field. Unity WebGL is the 3D view of that grid.
               Original music stems are mixed in JavaScript (audio.js): ambient, special, and
               exit. They mix by walkable-tile path distance, not a straight line, so the mix
-              signals where special tiles and the exit are. React is a Vite app (react-ui) for
-              more handheld UI, not the live HTML page.
+              signals where special tiles and the exit are. React is a Vite app (react-ui)
+              built and embedded in the live page for the menu panels and settings.
             </p>
           </section>
 
@@ -60,8 +60,9 @@
                 exit stems fade in by walkable-tile path distance, then fade out when you leave.
               </li>
               <li>
-                Handheld-style site shell in HTML and CSS (menus, special-room counter, volume
-                sliders, reset). React in a Vite app (react-ui) for more of that UI. Used Cursor
+                Handheld-style site shell in HTML and CSS (menu buttons, special-room counter).
+                React in a Vite app (react-ui) for the menu panels: credits, controls,
+                memory, and settings with music and game volume sliders and a reset. Used Cursor
                 for the shell and the Unity embed, then read and debugged what it produced.
                 Maze logic, rules, music, and audio direction are mine.
               </li>

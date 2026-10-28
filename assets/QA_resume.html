@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Jacqueline Babcock, Resume</title>
+    <style>
+      @page {
+        size: letter;
+        margin: 0.4in 0.55in 0.35in;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background: #fff;
+        color: #000;
+        font-family: Calibri, "Segoe UI", Arial, sans-serif;
+        font-size: 10pt;
+        line-height: 1.12;
+      }
+      h1 {
+        margin: 0 0 0.06in;
+        font-size: 20pt;
+        font-weight: 700;
+        text-align: center;
+        letter-spacing: 0.01em;
+      }
+      .contact {
+        margin: 0 0 0.1in;
+        text-align: center;
+        font-size: 10pt;
+      }
+      h2 {
+        margin: 0.08in 0 0.04in;
+        padding-bottom: 0.02in;
+        font-size: 11pt;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        border-bottom: 0.75pt solid #000;
+      }
+      p {
+        margin: 0 0 0.04in;
+      }
+      .job {
+        margin: 0 0 0.05in;
+      }
+      .job__row {
+        display: flex;
+        justify-content: space-between;
+        gap: 0.25in;
+        align-items: baseline;
+      }
+      .job__title,
+      .job__org {
+        font-weight: 700;
+      }
+      .job__dates,
+      .job__loc {
+        white-space: nowrap;
+      }
+      .job__role {
+        font-style: italic;
+        font-weight: 400;
+      }
+      ul {
+        margin: 0.02in 0 0;
+        padding-left: 0.2in;
+      }
+      li {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Jacqueline Babcock</h1>
+    <p class="contact">
+      Brooklyn, NY 11237 | Jacquelinebabc@gmail.com | (620) 617-1833 |
+      jacquelinebabc.com
+    </p>
+
+    <h2>Professional Summary</h2>
+    <p>
+      Junior QA tester with hands-on experience testing software builds, documenting
+      reproducible bugs, reviewing code, and managing version control on an 8-person student
+      Unity game team. Background in C#, C++ and JavaScript, with experience troubleshooting
+      integration and merge issues. Currently completing the Microsoft Junior QA / Software
+      Tester Professional Certificate. NYU BFA graduate.
+    </p>
+
+    <h2>Technical Skills</h2>
+    <p>
+      <strong>Testing:</strong> Manual testing, exploratory testing, bug reproduction, defect
+      reporting, test documentation, fix verification
+    </p>
+    <p>
+      <strong>Tools:</strong> Git/GitHub, Unity, Visual Studio Code, Microsoft 365
+    </p>
+    <p>
+      <strong>Currently studying:</strong> Jira, Zephyr, Azure DevOps, Playwright, SQL, Apache
+      JMeter
+    </p>
+    <p>
+      <strong>Languages:</strong> C#, C++, JavaScript, HTML, CSS, React
+    </p>
+
+    <h2>Projects</h2>
+    <div class="job">
+      <div class="job__row">
+        <span class="job__title">Group 5 FPS</span>
+        <span class="job__role">Lead Programmer / QA and Version Control (Unity, C#, GitHub)</span>
+      </div>
+      <ul>
+        <li>
+          Led programming for an 8-person student team (6 students plus 2 leads) building a
+          Unity FPS in weekly sprints, assigning tasks to three programmers and managing
+          version control and QA.
+        </li>
+        <li>
+          Tested programmers’ work at the end of each weekly sprint, documenting reproducible
+          bugs and reviewing findings one-on-one with programmers to support troubleshooting
+          and fixes.
+        </li>
+        <li>
+          Reviewed code and merged branches to main on GitHub. After a merge broke main (engine
+          version mismatch), set a sign-off rule for all merges and kept a backup branch.
+        </li>
+        <li>
+          Shipped the minimum viable product in 8 weeks, with biweekly professor reviews and
+          deliverables.
+        </li>
+      </ul>
+    </div>
+    <div class="job">
+      <div class="job__row">
+        <span class="job__title">MazeWeb</span>
+        <span class="job__role">Designer / Programmer (JavaScript, Unity WebGL, React)</span>
+      </div>
+      <ul>
+        <li>
+          Built a randomly generated maze game where JavaScript game logic drives a Unity WebGL
+          build, passing maze data into the engine so it builds the level in real time, with
+          menus, volume controls and a reset flow built in React.
+        </li>
+        <li>
+          Manually tested and debugged the JavaScript-to-Unity integration by tracing execution
+          paths and adding temporary keyboard triggers to isolate and verify specific features.
+          Debugged AI-assisted code using Cursor.
+        </li>
+      </ul>
+    </div>
+
+    <h2>Experience</h2>
+    <div class="job">
+      <div class="job__row">
+        <span class="job__title">Rental Tech</span>
+        <span class="job__dates">October 2026 to present</span>
+      </div>
+      <div class="job__row">
+        <span>LVR</span>
+        <span class="job__loc">New York, NY</span>
+      </div>
+      <ul>
+        <li>
+          Pull, test and check out camera, lighting and grip equipment against client rental
+          contracts, then print contracts and get signatures and management approval before
+          release.
+        </li>
+        <li>
+          Inspect and test returned equipment: scan items into the system, reconcile against
+          the contract, and log damaged or missing items before closing it out.
+        </li>
+        <li>
+          Work daily in proprietary inventory and contract software, locating items by barcode
+          or ID number.
+        </li>
+      </ul>
+    </div>
+    <div class="job">
+      <div class="job__row">
+        <span class="job__title">Short Film Editor and Script Supervisor</span>
+        <span class="job__dates">January - May 2025</span>
+      </div>
+      <div class="job__row">
+        <span>NYU (student film)</span>
+      </div>
+      <ul>
+        <li>
+          Tracked continuity across takes as script supervisor, documenting props, actors and
+          lines so inconsistencies were caught on set instead of in the edit.
+        </li>
+        <li>
+          Handled DIT and dailies: transferred and organized footage and kept files documented
+          for the editing team.
+        </li>
+        <li>
+          Edited the film with the director through rough, class and final cuts, checking
+          continuity between takes and meeting set deadlines.
+        </li>
+      </ul>
+    </div>
+    <div class="job">
+      <div class="job__row">
+        <span class="job__title">Front End / Stocking Assistant</span>
+        <span class="job__dates">2020 to 2022</span>
+      </div>
+      <div class="job__row">
+        <span>Kroger</span>
+        <span class="job__loc">Great Bend, KS</span>
+      </div>
+      <ul>
+        <li>
+          Helped customers, worked with inventory, and handled department opening and closing
+          as part of a team.
+        </li>
+      </ul>
+    </div>
+
+    <h2>Education and Certification</h2>
+    <div class="job">
+      <div class="job__row">
+        <span class="job__org">New York University</span>
+        <span class="job__dates">August 2026</span>
+      </div>
+      <div class="job__row">
+        <span>BFA in Film and Television</span>
+      </div>
+    </div>
+    <p>
+      <strong>Microsoft Junior QA / Software Tester Professional Certificate</strong> (in
+      progress): SDLC and Agile/Scrum, defect management, test design, API validation, SQL data
+      validation, Playwright automation, Jira and Zephyr
+    </p>
+  </body>
+</html>
